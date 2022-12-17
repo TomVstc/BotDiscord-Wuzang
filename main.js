@@ -5,7 +5,7 @@ const loadCommands = require("./Loader/loadCommands");
 const config = require("./config");
 
 bot.commands = new Discord.Collection();
-bot.login(config.token);
+bot.login(process.env.TOKEN);
 loadCommands(bot);
 
 // Variable
